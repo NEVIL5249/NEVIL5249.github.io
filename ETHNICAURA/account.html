@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/responsive-style.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <!---____________________________NAV BAR____________________________________-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #f8ecd7;">
+          <a class="navbar-brand" style="font-size: 1.5rem; font-weight: 500;" href="#">EthnicAura</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="height: 82px;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="men.html">Mens</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="women.html">Women</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kids.html">Kids</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sign_up.html"><i class="fa-solid fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<hr style="margin: 0px;">
+<!---_______________________________breadcrumb_________________________________-->
+
+    <div class="breadcrumb">
+        <span class="breadcrumb-item"><a href="index.html">Home</a></span>
+        <span class="breadcrumb-item"><a href="my_account.html">My Account</a></span>
+        <span class="breadcrumb-item">Sign In</span>
+    </div>
+<hr >
+
+<!---___________________________Form____________________________________-->
+
+    <div style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #FFFBF2; border-radius: 5px;">
+        <h2 class="heading" style="font-size: 2.5rem; color: black;"><em>Namste!</em></h2>
+        <form id="loginForm" onsubmit="return validateForm()" style="margin-left: 150px; margin-top: 19px;">
+            <label for="email" style="display: block; text-align: left;"><b>Email</b></label>
+            <input type="text" placeholder="Enter your email" id="email" name="email" 
+                style="width: 100%; max-width: 450px; margin: 0 auto; padding: 20px; background-color: #FFFBF2; border-radius: 5px; padding: 10px; margin: 8px 0; display: inline-block; border: 1px solid #511D00; background-color: #FFFBF2; box-sizing: border-box; border-radius: 5px;">
+
+            <label for="password" style="display: block; text-align: left;"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password" id="password" name="password" 
+                style="width: 100%; max-width: 450px; margin: 0 auto; padding: 20px; background-color: #FFFBF2; border-radius: 5px; padding: 10px; margin: 8px 0; display: inline-block; border: 1px solid #511D00; background-color: #FFFBF2; box-sizing: border-box; border-radius: 5px;">
+
+            <div id="error-message" class="error" style="color: red;"></div>
+
+            <input type="submit" value="Login" style="display: block; background-color: #E95827; color: #FFFBF2; padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; width: 450px; margin-top: 15px;">
+        </form>
+        <div style="margin-top: 15px;     margin-right: 163px;
+        color: #E95827;
+        text-decoration: none;
+        display: flex;
+        justify-content: end;">
+           <h6> <a href="forgot_password.html" style="color: #E95827; text-decoration: none; display: block;margin-top: -12px;
+            ">Forgot Password?</a></h6>
+        </div>
+        <div style="margin-top: 15px; text-decoration: none; display: flex; justify-content: center; align-items: center; font-size: 50px;">
+            <h6>
+              New Here? <a href="sign_up.html" style="color: #E95827; text-decoration: none; font-size: 1.1rem;">Create an Account</a>
+            </h6>
+            </div>
+    </div>
+
+
+
+
+
+    <br>
+    
+<hr style="margin: 0px;">
+    <!---___________________________Footer img_____________________________________-->
+    <div class="container2">
+        <img src="img/footer_img1.png" alt="" width="100%" style="margin-top: 0px;">
+    </div>
+
+
+    <!---___________________________Footer_____________________________________-->
+    <div class="container-fluid">
+        <footer class="text-center text-lg-start " style="background-color: #511D00; color: #FCF9F5;">
+          <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Left -->
+                <div class="me-5 d-none d-lg-block">
+                    <span>Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+      
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+      
+            <!-- Section: Links  -->
+            <section class="">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                <i class="fas fa-gem me-3"></i>EthnicAura
+                            </h6>
+                            <p>
+                                Elevate your style with our exquisite Indian ethnic wear collection, blending tradition
+                                and modernity for a timeless, cultural fashion experience. Shop now!
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+      
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Products
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">KURTA SET</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">SHERWANI</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">LEHENGA</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">SAREE</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+      
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                QUICK LINKS
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">About us</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Brand Story</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Blogs</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Help</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+      
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">CONTACT US</h6>
+                            <p><i class="fas fa-home me-3"></i> Rajkot, Gujrat, INDIA</p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                care@Companyname.com
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i> + 91 973 578 56</p>
+                            <p><i class="fas fa-print me-3"></i> + 91 879 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+      
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2023 Nevil Fashions Ltd. All rights reserved.
+            </div>
+            <!-- Copyright -->
+        </footer>
+      </div>
+      
+        
+
+
+      <script>
+        function validateForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var errorMessage = document.getElementById("error-message");
+        
+            errorMessage.innerHTML = "";
+        
+            if (email.trim() === "") {
+                errorMessage.innerHTML = "*Email is required.";
+                return false;
+            }
+        
+            if (!validateEmail(email)) {
+                errorMessage.innerHTML = "*Email is not in a valid format.";
+                return false;
+            }
+        
+            if (password.trim() === "") {
+                errorMessage.innerHTML = "*Password is required.";
+                return false;
+            }
+        
+            return true;
+        }
+        
+        function validateEmail(email) {
+            var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            return emailPattern.test(email);
+        }
+        </script>
+        
+
+</body>
+
+</html>
